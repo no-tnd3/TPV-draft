@@ -12,7 +12,6 @@ h3 {
     font-size: 2vw;
 }
 
-
 .header {
     background-color: black;
     padding: 25px 0px 45px 0px;
@@ -70,34 +69,6 @@ h3 {
     min-height: 50vh;
 }
 
-.main-center {
-    min-height: 380px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 50px auto;
-    max-width: 1620px;
-}
-
-.main-center h3 {
-    width: 65%;
-    text-align: center;
-}
-
-.main-center p {
-    width: 50%;
-    font-size: 1.5vw;
-}
-
-
-/*
-.main-content {
-    margin: 0px auto;
-    max-width: 1620px;
-}
-*/
-
 #scroll-to-top-button {
     display: none;
     position: fixed;
@@ -118,29 +89,6 @@ h3 {
     text-align: center;
     padding: 3vw 15vw;
     background-color: rgb(245, 245, 245);
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0px 15vw;
-
-}
-
-.flex-container div {
-    flex: 1;
-    margin: 60px;
-}
-
-.image-container img {
-    width: 100%;
-}
-
-.text-container {
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 .amenities {
@@ -165,8 +113,49 @@ h3 {
     text-align: center;
 }
 
+.booking-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 500px;
+    margin: 30px auto;
+}
 
+.booking-link-container a {
+    margin: 0px 10px;
+}
 
+.book-now-link {
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px 4vw 10px 4vw;
+    font-size: 22px;
+    border: 1px white solid;
+    border-radius: 5px;
+    flex-grow: 2;
+}
+
+.whatsapp-link {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 15px 3vw;
+    font-size: 1.4em;
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+.whatsapp-link img {
+    width: 36px;
+}
+
+.book-now-link:hover,
+.whatsapp-link:hover {
+    transition: 0.5s;
+    filter: invert(100%);
+}
 
 .carousel {
     height: 600px;
@@ -277,9 +266,6 @@ h3 {
     font-size: 1.5em;
 }
 
-
-
-
 .linktree-link {
     text-decoration: none;
     color: black;
@@ -296,156 +282,14 @@ h3 {
     text-decoration: none;
 }
 
-
-
 .linktree-container img {
     width: 320px;
     object-fit: contain;
 }
 
-
-
-
-
-
-
-
 .review-container {
     padding: 60px 15vw;
 }
-
-.review-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.review-card {
-    border: 1px gray solid;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 30px;
-    width: 40%;
-}
-
-.review-person {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.review-profile-pic {
-    margin: 15px;
-}
-
-.review-profile-pic img {
-    max-width: 100px;
-}
-
-.review-person-name {
-    margin-left: 15px;
-}
-
-.review-show-more a {
-    display: block;
-    text-align: right;
-    text-decoration: none;
-    color: gray;
-}
-
-.review-show-more a:hover {
-    text-decoration: underline;
-    transition: 0.5s;
-}
-
-.review-text {
-    margin: 15px;
-}
-
-.booking-container {
-    margin: 60px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.booking-link-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 500px;
-    margin: 30px auto;
-}
-
-.booking-link-container a {
-    margin: 0px 10px;
-}
-
-.book-now-link {
-    text-decoration: none;
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 20px 4vw 10px 4vw;
-    font-size: 22px;
-    border: 1px white solid;
-    border-radius: 5px;
-    flex-grow: 2;
-}
-
-.whatsapp-link {
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    padding: 15px 3vw;
-    font-size: 1.4em;
-    border: 1px white solid;
-    border-radius: 5px;
-}
-
-.whatsapp-link img {
-    width: 36px;
-}
-
-.book-now-link:hover,
-.whatsapp-link:hover {
-    transition: 0.5s;
-    filter: invert(100%);
-}
-
-
-
-
-iframe {
-    width: 100%;
-}
-
-.attraction-container {
-    margin: 0px auto;
-    padding: 60px 15vw;
-}
-
-.attraction-grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 20px;
-
-}
-
-.attraction-grid div {
-    text-align: center;
-}
-
-#attraction-img {
-    width: 12vw;
-    height: 12vw;
-}
-
-
-
 
 .perks-container {
     margin: 0px auto;
@@ -501,9 +345,9 @@ iframe {
     font-size: 22px;
 }
 
-
-
-
+.questions-link:hover {
+    filter: invert(100%);
+}
 
 .footer {
     background-color: rgb(0, 0, 0);
@@ -588,30 +432,11 @@ iframe {
         text-align: center;
     }
 
-
-    .main-content {
-        margin: 0px;
-    }
-
     #scroll-to-top-button {
         bottom: 30px;
         right: 12px;
         padding: 15px 30px;
         font-size: 1.4em;
-    }
-
-    .flex-container {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 10px 0px;
-    }
-
-    .flex-container div {
-        flex: 0;
-        margin: 10px 30px;
     }
 
     .second {
@@ -631,79 +456,6 @@ iframe {
     .amenities-card img {
         max-width: 10vw;
     }
-
-    .review-container {
-        margin: 10px 30px;
-        padding: 0px;
-    }
-
-    .review-card {
-        padding: 10px;
-        margin: 10px 0px;
-        width: 100%;
-    }
-
-    .review-profile-pic img {
-        max-width: 60px;
-    }
-
-    .review-person-name {
-        margin-left: 15px;
-    }
-
-    .review-show-more a {
-        display: block;
-        text-align: right;
-        text-decoration: none;
-        color: gray;
-    }
-
-    .booking-container {
-        margin: 10px 30px 40px 30px;
-        text-align: center;
-    }
-
-    .book-now-link {
-        text-decoration: none;
-        background-color: black;
-        color: white;
-        margin: 10px;
-        padding: 10px 8vw;
-        font-size: 1em;
-        border: 1px white solid;
-    }
-
-    .center-container {
-        padding: 0px;
-        margin: 0px;
-    }
-
-    iframe {
-        width: 100%;
-    }
-
-    .attraction-container {
-        margin: 0px 30px;
-        padding: 0px;
-    }
-
-    .attraction-grid {
-        grid-template-columns: 1fr 1fr;
-        margin: 0px;
-    }
-
-    .attraction-grid div {
-        text-align: center;
-    }
-
-    #attraction-img {
-        width: 130px;
-        height: 130px;
-    }
-
-
-
-
 
     .booking-link-container {
         display: flex;
@@ -739,8 +491,6 @@ iframe {
         width: 24px;
     }
 
-
-
     .carousel {
         padding: 0px;
     }
@@ -748,11 +498,6 @@ iframe {
     .carousel-indicators {
         display: none;
     }
-
-
-
-
-
 
     .blog-container {
         padding: 10px 30px;
@@ -770,14 +515,15 @@ iframe {
         text-decoration: none;
     }
 
-
-
     .linktree-container img {
         width: 100%;
         object-fit: contain;
     }
 
-
+    .review-container {
+        margin: 10px 30px;
+        padding: 0px;
+    }
 
     .perks-container {
         margin: 0px auto;
@@ -808,11 +554,14 @@ iframe {
         object-fit: cover;
     }
 
+    .question-container {
+        margin: 20px 0px;
+    }
 
-
-
-
-
+    .questions-link {
+        width: 50%;
+        font-size: 16px;
+    }
 
     .footer {
         background-color: rgb(0, 0, 0);
